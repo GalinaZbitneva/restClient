@@ -1,5 +1,5 @@
 
-package me.domain;
+package me.api.domain;
 
 import java.io.Serializable;
 import java.util.LinkedHashMap;
