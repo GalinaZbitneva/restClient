@@ -1,7 +1,6 @@
 package me.restApi.services;
 
 import me.api.domain.User;
-import me.api.domain.UserData;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -17,7 +16,7 @@ public class ApiServiceImpl implements ApiService {
 
     @Override
     public List<User> getUsers(Integer limit) {
-        List<User> userData = restTemplate.getForObject("https://jsonplaceholder.typicode.com/users?_limit=" + limit, List.class);
+        List<User> userData = restTemplate.getForObject("https://jsonplaceholder.typicode.com/users?limit=" + limit, List.class);
         return userData;
     }
 }
