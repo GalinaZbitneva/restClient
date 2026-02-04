@@ -28,6 +28,8 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<thymeleaf.version>3.1.3-SNAPSHOT</thymeleaf.version>
+		<thymeleaf-spring5.version>3.1.3-SNAPSHOT</thymeleaf-spring5.version>
 	</properties>
 	<dependencies>
 		<dependency>
