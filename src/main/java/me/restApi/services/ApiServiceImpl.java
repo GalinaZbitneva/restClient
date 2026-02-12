@@ -1,9 +1,14 @@
 package me.restApi.services;
 
 import me.api.domain.User;
+import me.api.domain.UserData;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -25,4 +30,6 @@ public class ApiServiceImpl implements ApiService {
         List<User> userList = restTemplate.getForObject("https://jsonplaceholder.typicode.com/users?_limit=", List.class);
         return userList;
     }
+
+
 }
